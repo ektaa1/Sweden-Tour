@@ -1,0 +1,350 @@
+CSS-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+.logo{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.logo img{
+    width: 90%;
+    border: 3px solid white;
+    border-style: 4px solid white;
+    border-radius: 70%;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    cursor: pointer;
+    
+}
+.nav-list{
+    width: 50%;
+    
+    display: flex;
+    align-items: center;
+    
+
+}
+.nav-list li{
+    
+    list-style: none;
+    padding: 18px;
+
+}
+.nav-list li a{
+    
+    text-decoration: none;
+    color: white;
+
+}
+.nav-list li a:hover{
+    
+    text-decoration: none;
+    color: gray;
+
+}
+.rightnav{
+    width: 50%;
+    text-align: right;
+    align-items: center;
+    padding: 0 23px;
+}
+#search{
+    padding: 5px;
+    font-size: medium;
+    border: 2px solid ;
+    border-radius: 10px;
+    margin-top: 15px;
+    align-items: center;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url(../img/istockphoto-177447843-170667a.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+.firstsection{
+    height: 100vh;
+}
+.firsthalf{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.secondhalf{
+    width=30%;
+
+}
+.secondhalf img{
+    width: 50%;
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+.textbig{
+    font-size: 30px;
+
+}
+.textsmall{
+    font-size: 15px;
+
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 2px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 19px;
+    cursor: pointer;
+    background: none;
+    color: wheat;
+ 
+}
+.btnsm{
+    padding: 5px 10px;
+    vertical-align: middle;;
+}
+
+.section{
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+.sectiontag{
+    padding:16px 0px;
+}
+.sleft{
+    flex-direction: row-reverse;
+}
+.paras{
+    padding: 0px 65px;;
+}
+.sectionsubtag{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.thumbnail img{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+.contact{
+    background-color: #cbd6e8;
+    height: 900px;
+}
+.textcenter{
+    text-align: center;
+    padding: 30px;
+    font-family: 'Ubuntu', sans-serif ;
+}
+.form{
+    max-width: 1000px;
+    margin:0px auto;
+    font-size: 45px;
+}
+.form input{
+    margin:30px 0px;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    margin : 14px 0;
+    font-family: 'Ubuntu', sans-serif;
+    
+    
+}
+.form textarea{
+    margin:30px 0px;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    margin : 14px 0;
+    font-family: 'Ubuntu', sans-serif;
+    
+    
+
+}
+.btndark{
+    color: black;
+    border: 2px solid gray;
+}
+.btndark:hover{
+    background-color:white;
+}
+
+HTML-
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala- your travel guide</title>
+</head>
+
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img src="img/istockphoto-1221359288-170667a.jpg" alt="logo"></div>
+            <li><a href="#home"> HOME </a></li>
+            <li><a href="#about"> ABOUT </a></li>
+            <li><a href="#services"> SERVICES </a></li>
+            <li><a href="#contactus"> CONTACT US </a></li>
+        </ul>
+        <div class="rightnav">
+            <input type="text" name="search" id="search">
+            <button class="btn btnsm">Search</button>
+        </div>
+    </nav>
+    <section class="background firstsection">
+        <div class="box-main">
+
+            <div class="firsthalf">
+
+                <p class="textbig">All About Kerala</p>
+                <p class="textsmall">dsd refuds f fddf gdg rgr g gf n</p>
+                <div class="button">
+                    <button class="btn">subscribe</button>
+                    <button class="btn">watch video</button>
+                </div>
+            </div>
+            <div class="secondhalf">
+                <img src="img/istockphoto-1221359288-170667a.jpg" alt="future image">
+
+
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="paras">
+        <p class="sectiontag textbig">cdscsd sddcds dsds</p>
+        <p class="sectionsubtag textsmall">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cumque rerum est,
+            eligendi, vel, accusamus illum tenetur nostrum assumenda quae soluta atque? Quisquam temporibus assumenda
+            sapiente, excepturi et nisi molestias neque? Laboriosam deleniti quasi veniam iste consectetur molestiae
+            labore! Dicta ducimus, ratione similique provident repudiandae voluptas at sunt libero voluptate obcaecati
+            debitis esse minima. Sequi veniam tenetur inventore eum provident dolor voluptate voluptatibus fugiat, fuga
+            velit pariatur eius nostrum labore quidem deserunt officiis cupiditate eligendi eos nemo. Voluptatem earum
+            eaque iure, numquam vel nesciunt unde deserunt dolore nisi quaerat impedit ullam officiis voluptatum
+            voluptas tenetur, aliquid magnam quidem dicta vitae!</p>
+        </div>
+            <div class="thumbnail">
+                <img src="img\istockphoto-1221359288-170667a.jpg" alt="" class="imgfluid">
+            </div>
+        
+    </section>
+    <section class="section sleft">
+        <div class="paras">
+        <p class="sectiontag textbig">cdscsd sddcds dsds</p>
+        <p class="sectionsubtag textsmall">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cumque rerum est,
+            eligendi, vel, accusamus illum tenetur nostrum assumenda quae soluta atque? Quisquam temporibus assumenda
+            sapiente, excepturi et nisi molestias neque? Laboriosam deleniti quasi veniam iste consectetur molestiae
+            labore! Dicta ducimus, ratione similique provident repudiandae voluptas at sunt libero voluptate obcaecati
+            debitis esse minima. Sequi veniam tenetur inventore eum provident dolor voluptate voluptatibus fugiat, fuga
+            velit pariatur eius nostrum labore quidem deserunt officiis cupiditate eligendi eos nemo. Voluptatem earum
+            eaque iure, numquam vel nesciunt unde deserunt dolore nisi quaerat impedit ullam officiis voluptatum
+            voluptas tenetur, aliquid magnam quidem dicta vitae!</p>
+        </div>
+            <div class="thumbnail">
+                <img src="img\istockphoto-1221359288-170667a.jpg" alt="" class="imgfluid">
+            </div>
+        
+    </section>
+    <section class="section">
+        <div class="paras">
+        <p class="sectiontag textbig">cdscsd sddcds dsds</p>
+        <p class="sectionsubtag textsmall">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cumque rerum est,
+            eligendi, vel, accusamus illum tenetur nostrum assumenda quae soluta atque? Quisquam temporibus assumenda
+            sapiente, excepturi et nisi molestias neque? Laboriosam deleniti quasi veniam iste consectetur molestiae
+            labore! Dicta ducimus, ratione similique provident repudiandae voluptas at sunt libero voluptate obcaecati
+            debitis esse minima. Sequi veniam tenetur inventore eum provident dolor voluptate voluptatibus fugiat, fuga
+            velit pariatur eius nostrum labore quidem deserunt officiis cupiditate eligendi eos nemo. Voluptatem earum
+            eaque iure, numquam vel nesciunt unde deserunt dolore nisi quaerat impedit ullam officiis voluptatum
+            voluptas tenetur, aliquid magnam quidem dicta vitae!</p>
+        </div>
+            <div class="thumbnail">
+                <img src="img\istockphoto-1221359288-170667a.jpg" alt="" class="imgfluid">
+            </div>
+        
+    </section>
+    <section class="section sleft">
+        <div class="paras">
+        <p class="sectiontag textbig">cdscsd sddcds dsds</p>
+        <p class="sectionsubtag textsmall">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cumque rerum est,
+            eligendi, vel, accusamus illum tenetur nostrum assumenda quae soluta atque? Quisquam temporibus assumenda
+            sapiente, excepturi et nisi molestias neque? Laboriosam deleniti quasi veniam iste consectetur molestiae
+            labore! Dicta ducimus, ratione similique provident repudiandae voluptas at sunt libero voluptate obcaecati
+            debitis esse minima. Sequi veniam tenetur inventore eum provident dolor voluptate voluptatibus fugiat, fuga
+            velit pariatur eius nostrum labore quidem deserunt officiis cupiditate eligendi eos nemo. Voluptatem earum
+            eaque iure, numquam vel nesciunt unde deserunt dolore nisi quaerat impedit ullam officiis voluptatum
+            voluptas tenetur, aliquid magnam quidem dicta vitae!</p>
+        </div>
+            <div class="thumbnail">
+                <img src="img\istockphoto-1221359288-170667a.jpg" alt="" class="imgfluid">
+            </div>
+        
+    </section>
+    <section class="section">
+        <div class="paras">
+        <p class="sectiontag textbig">cdscsd sddcds dsds</p>
+        <p class="sectionsubtag textsmall">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa cumque rerum est,
+            eligendi, vel, accusamus illum tenetur nostrum assumenda quae soluta atque? Quisquam temporibus assumenda
+            sapiente, excepturi et nisi molestias neque? Laboriosam deleniti quasi veniam iste consectetur molestiae
+            labore! Dicta ducimus, ratione similique provident repudiandae voluptas at sunt libero voluptate obcaecati
+            debitis esse minima. Sequi veniam tenetur inventore eum provident dolor voluptate voluptatibus fugiat, fuga
+            velit pariatur eius nostrum labore quidem deserunt officiis cupiditate eligendi eos nemo. Voluptatem earum
+            eaque iure, numquam vel nesciunt unde deserunt dolore nisi quaerat impedit ullam officiis voluptatum
+            voluptas tenetur, aliquid magnam quidem dicta vitae!</p>
+        </div>
+            <div class="thumbnail">
+                <img src="img\istockphoto-1221359288-170667a.jpg" alt="" class="imgfluid">
+            </div>
+        
+    </section>
+    <section class="contact">
+        <h2 class="textcenter">Contact Us</h2>
+        <div class="form">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="email" name="name" id="email" placeholder="Enter your email">
+            <input type="number" name="name" id="phone" placeholder="Enter your phone">
+            <textarea name="name" id="area" cols="30" rows="10" placeholder="elaborate your concern"></textarea>
+            <button class="btn btndark">Submit</button>
+        </div>
+    </section>
+</body>
+
+</html>
